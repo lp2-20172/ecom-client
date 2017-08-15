@@ -14,3 +14,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 >npm start
 ```
 
+
+# Rama reactcomponent: 
+## Ejercicio 1:
+No necesita nuevas librería
+```
+
+```
+## Run app:
+```
+>npm start
+```
