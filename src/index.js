@@ -8,13 +8,18 @@ import Footer from './components/Footer';
 import Layout from './components/Layout';
 import Counter from './components/Counter';
 
+import { Provider } from 'react-redux'
+import store from './store'
+
 ReactDOM.render(
+    <Provider store = {store} >
     <Router history={browserHistory}>
         <Route component={MainLayout}>
             <Route path="/" component={Footer}/>
             <Route path="/users" component={Layout}/>
             <Route path="/counters" component={Counter}/>
         </Route>
-    </Router>,
+    </Router>
+    </Provider>,
     document.getElementById('root'));
 registerServiceWorker();
