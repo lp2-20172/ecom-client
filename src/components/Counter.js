@@ -22,7 +22,7 @@ const mapStateToProps = (store) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        increment: (n)=>{  dispatch (increment (n))},
+        increment: (n)=>{ dispatch (increment (n)) },
         decrement: (n)=>{ dispatch (decrement (n)) }
     }
 }
