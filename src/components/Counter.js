@@ -8,8 +8,8 @@ class Counter extends Component {
       <div>
           n={ this.props.n }
           <br />
-          <button onClick={this.props.increment(this.props.n)}> + </button>
-          <button onClick={this.props.decrement(this.props.n)}> - </button>
+          <button onClick={()=>this.props.increment(this.props.n)}> + </button>
+          <button onClick={()=>this.props.decrement(this.props.n)}> - </button>
       </div>
     );
   }
@@ -17,7 +17,7 @@ class Counter extends Component {
 
 const mapStateToProps = (store) => {
     return {
-        n:store.counterReducer.n
+        n:store.counter.n
     }
 }
 const mapDispatchToProps = (dispatch) => {

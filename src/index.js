@@ -16,8 +16,8 @@ ReactDOM.render(
     <Router history={browserHistory}>
         <Route component={MainLayout}>
             <Route path="/" component={Footer}/>
-            <Route path="/users" component={Layout}/>
-            <Route path="/counters" component={Counter}/>
+            <Route path="users" component={Layout}/>
+            <Route path="counters" component={Counter}/>
         </Route>
     </Router>
     </Provider>,
