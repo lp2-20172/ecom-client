@@ -10,6 +10,7 @@ class MainLayout extends Component {
                     <ul>
                         <li><Link to="/" >Home</Link></li>
                         <li><Link to="/users" >User List</Link></li>
+                        <li><Link to="/counters" >Counter</Link></li>
                     </ul>
 
                 </div>
