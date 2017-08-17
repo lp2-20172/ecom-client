@@ -51,7 +51,8 @@ D:\dev\LP2-20172\ecom-client>git branch -a
   remotes/origin/reactcomponent
   remotes/origin/reactredux
 ```
-## Moverse o cambiar de rama (branch): $ git checkout <nombre-rama>
+
+## Moverse o cambiar de rama (branch): $ git checkout << nombre-rama >>
 ```
 D:\dev\LP2-20172\ecom-client>git checkout reactredux
 Switched to a new branch 'reactredux'
@@ -60,15 +61,13 @@ Branch reactredux set up to track remote branch reactredux from origin.
 D:\dev\LP2-20172\ecom-client>
 ```
 
-## Moverse para la rama reactcomponent
-```
-D:\dev\LP2-20172\ecom-client>git checkout reactcomponent
-```
+
 
 ## Instalar dependencias:
 ```
 D:\dev\LP2-20172\ecom-client>npm install
 ```
+
 ## Run app:
 ```
 ecom-client>npm start
@@ -80,4 +79,8 @@ npm install --save react-router@2.0.0
 npm install --save redux react-redux
 ```
 
+## (opcional) Moverse para la rama reactcomponent
+```
+D:\dev\LP2-20172\ecom-client>git checkout reactcomponent
+```
 
