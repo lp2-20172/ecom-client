@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { increment } from '../actions/counterAction'
+import { getList } from '../actions/userAction'
 import { connect } from 'react-redux'
 class User extends Component {
+    componentWillMount (){
+        this.props.listausers()
+    }
+
     render() {
         return (
             <div>
@@ -18,8 +22,8 @@ class User extends Component {
                     <tbody>
                         {this.props.list.map((d) =>
                             <tr>
-                                <td>d.name</td>
-                                <td>d.email</td>
+                                <td>{d.name}</td>
+                                <td>{d.email}</td>
                             </tr>
                         )}
                     </tbody>
@@ -38,7 +42,7 @@ const mapStateToProps = (store) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        increment: (n) => { dispatch(increment(n)) },
+        listausers: () => { dispatch(getList()) },
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(User);
