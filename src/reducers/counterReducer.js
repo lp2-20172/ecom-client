@@ -3,11 +3,12 @@ const initialState ={
     n:0,
     x:5
 }
-/* ES5 */
+/* ES5 
 function counterx(state=initialState, action) {
 }
 var counterx = function (state=initialState, action) {
 }
+*/
 /* ES6 */
 const counter = (state=initialState, action) => {
     switch(action.type) {
@@ -22,7 +23,6 @@ const counter = (state=initialState, action) => {
         }
         default: return state
     }
-    return state
 }
 
 export default counter

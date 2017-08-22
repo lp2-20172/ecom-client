@@ -105,7 +105,7 @@ D:\LP2-20172\ecom-client>
 
 ## Intalar axios:
 ```
-npm install --save axios
+npm install --save axios redux-thunk
 ```
 ## o bien :
 ```

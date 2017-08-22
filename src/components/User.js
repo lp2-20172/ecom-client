@@ -3,7 +3,7 @@ import { getList } from '../actions/userAction'
 import { connect } from 'react-redux'
 class User extends Component {
     componentWillMount() {
-        this.props.listausers()
+        this.props.listausers("")
     }
 
     change(e) {
@@ -15,7 +15,7 @@ class User extends Component {
     render() {
         return (
             <div>
-                n={this.props.n}
+                q={this.props.q}
                 <br />
                 <h2>User List</h2>
                 <input type="text" onChange={this.change.bind(this)} />
@@ -27,7 +27,7 @@ class User extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {this.props.list.map((d) =>
+                        {this.props.list.map(d =>
                             <tr>
                                 <td>{d.name}</td>
                                 <td>{d.email}</td>
@@ -49,7 +49,7 @@ const mapStateToProps = (store) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        listausers: (q = '') => { dispatch(getList(q)) },
+        listausers: (q ) => { dispatch(getList(q)) }
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(User);
