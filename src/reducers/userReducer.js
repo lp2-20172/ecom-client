@@ -9,6 +9,7 @@ const userReducers = (state=initialState, action) => {
             ...state,
             list:action.list
         }
+        default: return state
     }
     return state
 }

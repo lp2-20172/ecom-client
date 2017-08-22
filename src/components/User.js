@@ -10,14 +10,19 @@ class User extends Component {
                 <h2>User List</h2>
                 <table>
                     <thead>
-                        <th>Nombre</th>
-                        <th>Email</th>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        <td>nombre</td>
-                        <td>email</td>
+                        {this.props.list.map((d) =>
+                            <tr>
+                                <td>d.name</td>
+                                <td>d.email</td>
+                            </tr>
+                        )}
                     </tbody>
-
                     <tfoot>
 
                     </tfoot>
@@ -28,7 +33,7 @@ class User extends Component {
 }
 const mapStateToProps = (store) => {
     return {
-        n: store.counter.n
+        list: store.user.list
     }
 }
 const mapDispatchToProps = (dispatch) => {
