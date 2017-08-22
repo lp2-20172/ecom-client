@@ -1,12 +1,16 @@
+export const INCREMENT ="INCREMENT"
+export const DECREMENT ="DECREMENT"
+
 const increment = (n) => {
+    console.log("n="+n)
     return {
-        type: "INCREMENT",
+        type: INCREMENT,
         n: n
     }
 }
 const decrement = (n) => {
     return {
-        type: "DECREMENT",
+        type: DECREMENT,
         n: n
     }
 }

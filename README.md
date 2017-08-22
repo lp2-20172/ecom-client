@@ -84,3 +84,19 @@ npm install --save redux react-redux
 D:\dev\LP2-20172\ecom-client>git checkout reactcomponent
 ```
 
+## (opcional) Moverse para la rama master descartando los cambios de la rama actual (reactcomponent)
+```
+D:\dev\LP2-20172\ecom-client>git checkout - f master
+```
+## (opcional) Si nuestro repo local está desactualizado, traer como:
+```
+D:\LP2-20172\ecom-client>git pull origin reactredux
+From https://github.com/lp2-20172/ecom-client
+ * branch            reactredux -> FETCH_HEAD
+Updating 3022e84..b823874
+Fast-forward
+ README.md | 49 ++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 44 insertions(+), 5 deletions(-)
+
+D:\LP2-20172\ecom-client>
+```
