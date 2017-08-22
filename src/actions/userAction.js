@@ -2,9 +2,9 @@ import axios from 'axios'
 
 export const USER_LIST = "USER_LIST"
 
-const getList = () => {
+const getList = (q='') => {
     return (dispatch, getState) => {
-        axios.get('https://jsonplaceholder.typicode.com/users')
+        axios.get('https://jsonplaceholder.typicode.com/users?q='+q)
             .then((r) => {
                 dispatch({
                     "type": USER_LIST,
