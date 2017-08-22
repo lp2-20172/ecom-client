@@ -100,3 +100,16 @@ Fast-forward
 
 D:\LP2-20172\ecom-client>
 ```
+
+# TAller 2 :
+
+## Intalar axios:
+```
+npm install --save axios
+```
+## o bien :
+```
+npm install
+```
+
+
