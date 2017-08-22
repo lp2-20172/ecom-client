@@ -9,8 +9,9 @@ class MainLayout extends Component {
                 <div className="menu">
                     <ul>
                         <li><Link to="/" >Home</Link></li>
-                        <li><Link to="/users" >User List</Link></li>
+                        <li><Link to="/layouts" >layouts List</Link></li>
                         <li><Link to="/counters" >Counter</Link></li>
+                        <li><Link to="/users" >Users</Link></li>
                     </ul>
 
                 </div>

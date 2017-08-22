@@ -4,8 +4,8 @@ export const DECREMENT ="DECREMENT"
 const increment = (n) => {
     console.log("n="+n)
     return {
-        type: INCREMENT,
-        n: n
+        "type": INCREMENT,
+        "n": n
     }
 }
 const decrement = (n) => {
