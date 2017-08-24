@@ -8,9 +8,13 @@ import Footer from './components/Footer';
 import Layout from './components/Layout';
 import Counter from './components/Counter';
 import User from './components/User';
+import ECom from './components/ECom';
+
 
 import { Provider } from 'react-redux'
 import store from './store'
+
+
 
 ReactDOM.render(
     <Provider store = {store} >
@@ -20,6 +24,7 @@ ReactDOM.render(
             <Route path="layouts" component={Layout}/>
             <Route path="counters" component={Counter}/>
             <Route path="users" component={User}/>
+            <Route path="ecoms" component={ECom} />
         </Route>
     </Router>
     </Provider>,

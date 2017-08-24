@@ -113,3 +113,26 @@ npm install
 ```
 
 
+
+# TAller 3 : Carrito de compras
+
+## Traer la rama carrito 
+```
+D:\dev\LP2-20172\ecom-client>git pull origin carrito
+```
+
+## Moverse para la rama carrito
+```
+D:\dev\LP2-20172\ecom-client>git checkout carrito
+```
+
+## Intalar material-ui material-ui-icons, ejecutando el siguiente comando:
+
+```
+npm install
+```
+
+## Run app:
+```
+ecom-client>npm start
+```
