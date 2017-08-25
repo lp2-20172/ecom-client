@@ -1,6 +1,7 @@
 import {combineReducers} from 'redux'
 import {responsiveStateReducer} from 'redux-responsive'
 import {responsiveDrawer} from 'material-ui-responsive-drawer';
+import { routerReducer } from 'react-router-redux';
 
 import counterReducer from './counterReducer'
 import user from './userReducer'
@@ -12,6 +13,7 @@ var reducers = combineReducers({
     ecom: ecomReducers,
     browser: responsiveStateReducer,
     responsiveDrawer: responsiveDrawer,
+    routing: routerReducer,
 });
 
 export default reducers;

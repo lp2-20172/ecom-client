@@ -7,15 +7,20 @@ import {
     ResponsiveDrawer,
     ResponsiveAppBar,
     BodyContainer,
+    setDrawerOpen,
     toggleDrawerOpen
 } from 'material-ui-responsive-drawer'
+import {SelectableMenuList} from './utils/SelectableMenuList';
+
+import {  push } from 'react-router-redux';
 
 import IconButton from 'material-ui/IconButton';
-
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography'
 import Divider from 'material-ui/Divider';
 import Close from 'material-ui-icons/Close';
+
+
 
 const styles = {
     drawer_container: {
@@ -32,6 +37,28 @@ class MainLayout extends Component {
             toggleDrawerOpen,
             responsiveDrawer
         } = this.props
+        const index=this.props.location?this.props.location.pathname:'/';
+
+        const menuItems=[
+            
+                  {
+                    subheader: 'Settings',
+                  },
+                  {
+                    value:'/profile_photo',
+                    visible: true,
+                    primaryText: 'Profile photo',
+                    secondaryText: 'Change your Google+ profile photo',
+                  },
+                  {
+                    value:'/show_status',
+                    visible: false,
+                    primaryText: 'Show your status',
+                    secondaryText: 'Your status is visible to everyone you use with',
+                  },
+            
+                ];
+
 
         return (
             <div>
@@ -57,6 +84,12 @@ class MainLayout extends Component {
                                 <li><Link to="/users" >Users</Link></li>
                                 <li><Link to="/ecoms">Ecom Carrito</Link></li>
                             </ul>
+                            <SelectableMenuList
+                items={menuItems}
+                onIndexChange={this.handleChange}
+                index={index}
+              />
+
 
                         </div>
 
