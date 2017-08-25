@@ -2,10 +2,7 @@ import React from 'react';
 import { Component } from 'react'
 //import { Button, Glyphicon } from 'react-bootstrap';
 import Button from 'material-ui/Button';
-import { withStyles } from 'material-ui/styles';
-import Icon from 'material-ui/Icon';
 import IconButton from 'material-ui/IconButton';
-import DeleteIcon from 'material-ui-icons/Delete';
 import AddShoppingCartIcon from 'material-ui-icons/AddShoppingCart';
 
 import { addToCart, loadProducts } from '../../actions/ecomAction';
@@ -39,7 +36,7 @@ class ProductList extends Component {
             <div className="caption">
               <h4>{product.name}</h4>
               <p>
-                <Button bsStyle="primary" onClick={() => this.props.addToCart(product)} role="button" 
+                <Button  onClick={() => this.props.addToCart(product)} role="button" 
                   disabled={product.inventory <= 0}>${product.price}
 
                 <IconButton color="primary" aria-label="Add to shopping cart">

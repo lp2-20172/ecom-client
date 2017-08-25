@@ -126,7 +126,7 @@ D:\dev\LP2-20172\ecom-client>git pull origin carrito
 D:\dev\LP2-20172\ecom-client>git checkout carrito
 ```
 
-## Intalar material-ui material-ui-icons, ejecutando el siguiente comando:
+## Intalar material-ui material-ui-icons, y otros ejecutando el siguiente comando:
 
 ```
 npm install

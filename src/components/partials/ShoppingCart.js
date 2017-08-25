@@ -1,12 +1,8 @@
 import React from 'react';
 //import { Panel, Table, Button, Glyphicon } from 'react-bootstrap';
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import Button from 'material-ui/Button';
-import { withStyles } from 'material-ui/styles';
-import Icon from 'material-ui/Icon';
 import IconButton from 'material-ui/IconButton';
 import DeleteIcon from 'material-ui-icons/Delete';
-import AddShoppingCartIcon from 'material-ui-icons/AddShoppingCart';
 import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
 import Paper from 'material-ui/Paper';
 import Typography from 'material-ui/Typography';
